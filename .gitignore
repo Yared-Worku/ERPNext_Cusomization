@@ -1,0 +1,5 @@
+env/
+node_modules/
+sites/development.localhost/private/
+sites/development.localhost/public/files/
+*.log
