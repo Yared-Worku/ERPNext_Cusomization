@@ -12,3 +12,6 @@ frappe-bench/chromium/
 frappe-bench/chromium/
 chromium/
 *.log
+logs/
+sites/*/logs/
+sites/assets/
