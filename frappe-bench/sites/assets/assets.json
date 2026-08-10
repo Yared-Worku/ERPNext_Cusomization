@@ -51,5 +51,10 @@
     "erpnext.bundle.js": "/assets/erpnext/dist/js/erpnext.bundle.5VYIJGO5.js",
     "item-dashboard.bundle.js": "/assets/erpnext/dist/js/item-dashboard.bundle.V3NJ2Q3B.js",
     "point-of-sale.bundle.js": "/assets/erpnext/dist/js/point-of-sale.bundle.2L5JHU3C.js",
-    "bom_configurator.bundle.js": "/assets/erpnext/dist/js/bom_configurator.bundle.6PIPZGKE.js"
+    "bom_configurator.bundle.js": "/assets/erpnext/dist/js/bom_configurator.bundle.6PIPZGKE.js",
+    "hierarchy-chart.bundle.js": "/assets/hrms/dist/js/hierarchy-chart.bundle.T2UGGG7A.js",
+    "hrms.bundle.js": "/assets/hrms/dist/js/hrms.bundle.DUR7UVZO.js",
+    "interview.bundle.js": "/assets/hrms/dist/js/interview.bundle.DHVAX6KM.js",
+    "performance.bundle.js": "/assets/hrms/dist/js/performance.bundle.7FVMPYHZ.js",
+    "hrms.bundle.css": "/assets/hrms/dist/css/hrms.bundle.GB5DFVFH.css"
 }

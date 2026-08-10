@@ -10,5 +10,6 @@
     "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.LOBFNHMS.css",
     "rtl_erpnext-web.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext-web.bundle.EX6MXT5N.css",
     "rtl_erpnext.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext.bundle.TNYMBCQM.css",
-    "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.3E7DMFXO.css"
+    "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.3E7DMFXO.css",
+    "rtl_hrms.bundle.css": "/assets/hrms/dist/css-rtl/hrms.bundle.7IZOD552.css"
 }
