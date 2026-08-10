@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+sites/*/public/files/
+*.log
+.env
+frappe-bench/chromium/
+chromium/
+chromium/
+frappe-bench/chromium/
+*.log
+frappe-bench/chromium/
+chromium/
+*.log
