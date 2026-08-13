@@ -8,5 +8,6 @@
   "frappe",
   "erpnext",
   "hrms"
- ]
+ ],
+ "server_script_enabled": 1
 }
