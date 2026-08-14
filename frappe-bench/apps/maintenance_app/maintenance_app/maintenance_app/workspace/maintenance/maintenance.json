@@ -1,0 +1,33 @@
+{
+ "category": "Modules",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "icon": "wrench",
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Maintenance App",
+ "module": "Maintenance App",
+ "name": "Maintenance App",
+ "public": 1,
+ "roles": [],
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service Tickets",
+   "link_to": "Service Ticket",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Service Spare Parts",
+   "link_to": "Service Spare Part",
+   "type": "DocType"
+  }
+ ],
+ "title": "Maintenance App"
+}
