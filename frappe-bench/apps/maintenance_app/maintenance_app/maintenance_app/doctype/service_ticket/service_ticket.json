@@ -1,0 +1,54 @@
+{
+  "actions": [],
+  "autoname": "TICKET-.#####",
+  "creation": "2026-08-14 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": ["equipment_name", "status", "labor_fee", "total_cost", "spare_parts"],
+  "fields": [
+    {
+      "fieldname": "equipment_name",
+      "fieldtype": "Data",
+      "label": "Equipment Name",
+      "reqd": 1
+    },
+    {
+      "default": "Open",
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open\nIn Progress\nCompleted\nClosed"
+    },
+    {
+      "fieldname": "labor_fee",
+      "fieldtype": "Currency",
+      "label": "Labor Fee",
+      "default": "0.0"
+    },
+    {
+      "fieldname": "total_cost",
+      "fieldtype": "Currency",
+      "label": "Total Cost",
+      "read_only": 1
+    },
+    {
+      "fieldname": "spare_parts",
+      "fieldtype": "Table",
+      "label": "Spare Parts",
+      "options": "Service Spare Part"
+    }
+  ],
+  "module": "Maintenance App",
+  "name": "Service Ticket",
+  "naming_rule": "Expression",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "read": 1,
+      "role": "System Manager",
+      "write": 1
+    }
+  ]
+}
