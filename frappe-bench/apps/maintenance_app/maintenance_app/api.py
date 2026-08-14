@@ -99,3 +99,54 @@ def create_service_ticket(equipment_name: str, labor_fee: float = 0.0, spare_par
         "ticket_id": ticket_id,
         "total_cost": total_cost
     }
+@frappe.whitelist(allow_guest=True)
+def update_ticket_status(ticket_id: str, status: str):
+    """
+    [UPDATE] Updates the status of an existing Service Ticket using raw SQL.
+    """
+    # Verify existence
+    check_sql = "SELECT name FROM `tabService Ticket` WHERE name = %s;"
+    if not frappe.db.sql(check_sql, (ticket_id,)):
+        return {"status": "error", "message": f"Ticket {ticket_id} not found."}
+
+    update_sql = """
+        UPDATE `tabService Ticket`
+        SET status = %s, modified = NOW()
+        WHERE name = %s;
+    """
+    frappe.db.sql(update_sql, (status, ticket_id))
+    frappe.db.commit()
+
+    return {
+        "status": "success",
+        "message": f"Ticket {ticket_id} status updated to '{status}'",
+        "ticket_id": ticket_id,
+        "new_status": status
+    }
+
+
+@frappe.whitelist(allow_guest=True)
+def delete_service_ticket(ticket_id: str):
+    """
+    [DELETE] Removes a Service Ticket and its child Spare Parts from MariaDB.
+    """
+    # Verify existence
+    check_sql = "SELECT name FROM `tabService Ticket` WHERE name = %s;"
+    if not frappe.db.sql(check_sql, (ticket_id,)):
+        return {"status": "error", "message": f"Ticket {ticket_id} not found."}
+
+    # 1. Delete Child Records first (Relational Integrity)
+    delete_parts_sql = "DELETE FROM `tabService Spare Part` WHERE parent = %s;"
+    frappe.db.sql(delete_parts_sql, (ticket_id,))
+
+    # 2. Delete Parent Record
+    delete_ticket_sql = "DELETE FROM `tabService Ticket` WHERE name = %s;"
+    frappe.db.sql(delete_ticket_sql, (ticket_id,))
+
+    frappe.db.commit()
+
+    return {
+        "status": "success",
+        "message": f"Service Ticket {ticket_id} and its associated spare parts deleted successfully",
+        "deleted_ticket_id": ticket_id
+    }

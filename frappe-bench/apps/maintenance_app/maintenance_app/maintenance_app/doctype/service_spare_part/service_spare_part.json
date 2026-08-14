@@ -1,0 +1,37 @@
+{
+  "actions": [],
+  "creation": "2026-08-14 10:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": ["part_name", "qty", "unit_price", "amount"],
+  "fields": [
+    {
+      "fieldname": "part_name",
+      "fieldtype": "Data",
+      "label": "Part Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "qty",
+      "fieldtype": "Float",
+      "label": "Quantity",
+      "default": "1"
+    },
+    {
+      "fieldname": "unit_price",
+      "fieldtype": "Currency",
+      "label": "Unit Price",
+      "default": "0.0"
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount",
+      "read_only": 1
+    }
+  ],
+  "istable": 1,
+  "module": "Maintenance App",
+  "name": "Service Spare Part",
+  "owner": "Administrator"
+}
