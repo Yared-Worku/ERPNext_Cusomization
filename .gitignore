@@ -3,3 +3,8 @@ node_modules/
 sites/development.localhost/private/
 sites/development.localhost/public/files/
 *.log
+frappe-bench/apps/
+frappe-bench/env/
+frappe-bench/sites/*/private/
+frappe-bench/logs/
+frappe-bench/node_modules/
