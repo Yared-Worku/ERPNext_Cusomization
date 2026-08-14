@@ -17,5 +17,15 @@
         "required": [],
         "idx": 2,
         "version": "17.0.0-dev"
+    },
+    "maintenance_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "b7cd4c1e0f0268519a9b89864c8cf129450ab39b",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
     }
 }

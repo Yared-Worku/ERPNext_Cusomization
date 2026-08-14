@@ -3,11 +3,13 @@
  "db_password": "Xye2DSoRXUSOPrr2",
  "db_type": "mariadb",
  "db_user": "_4da87d66bfdd39b7",
+ "disable_scheduler": 0,
  "encryption_key": "TSm-vxc8s4E70S2ngQ63YY6tcrk6cAsYEFOf3Z8vzx8=",
  "installed_apps": [
   "frappe",
   "erpnext",
-  "hrms"
+  "hrms",
+  "maintenance_app"
  ],
  "server_script_enabled": 1
 }
