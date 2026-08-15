@@ -1,6 +1,7 @@
 {
  "app": "maintenance_app",
  "category": "Modules",
+ "content": "[]",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
@@ -31,5 +32,5 @@
   }
  ],
  "title": "Maintenance App",
- "type": "App"
+ "type": "Workspace"
 }
