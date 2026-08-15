@@ -30,5 +30,6 @@
    "type": "DocType"
   }
  ],
- "title": "Maintenance App"
+ "title": "Maintenance App",
+ "type": "App"
 }
